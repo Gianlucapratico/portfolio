@@ -26,7 +26,7 @@ function Contacts({ isDarkMode }) {
 
   return (
     <Container id="contact" className={isDarkMode ? "dark-mode" : ""}>
-      <h2 className="text-center mt-5 mb-5">Contatti</h2>
+      <h2 className="text-center mt-5 mb-5">Contacts</h2>
       <Form
         className="d-flex flex-column align-items-center responsive-form snake-border-form"
         id="contact-form"

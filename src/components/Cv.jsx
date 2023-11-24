@@ -13,7 +13,7 @@ const CV = () => {
 
   return (
     <div style={{ textAlign: "center", marginBottom: "25px" }}>
-      <h2 className="cv">Scarica il mio CV:</h2>
+      <h2 className="cv">Download my CV:</h2>
 
       <button onClick={downloadCV}>
         <img

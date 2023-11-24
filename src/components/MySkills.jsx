@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import "../App.css";
 
 const MySkills = () => {
@@ -18,38 +19,28 @@ const MySkills = () => {
     { name: "HTML5", icon: "./assets/HTML5.png" },
   ];
 
-  // Calcola l'indice a metà dell'array
-  const middleIndex = Math.ceil(skills.length / 2);
-
-  // Separa le icone in due gruppi
-  const topSkills = skills.slice(0, middleIndex);
-  const bottomSkills = skills.slice(middleIndex);
-
   return (
-    <div>
+    <Container fluid>
       <h2 className="Skills">My Skills</h2>
-      <div className="skills-container">
-        {/* Prima metà */}
-        <div className="skills-group">
-          {topSkills.map((skill, index) => (
-            <div className="skill-item" key={index}>
-              <img src={skill.icon} alt={skill.name} />
+      <Row
+        xs={1}
+        sm={2}
+        md={3}
+        lg={4}
+        xl={6}
+        className="skills-container"
+        gap={2}
+      >
+        {skills.map((skill, index) => (
+          <Col key={index}>
+            <div className="skill-item">
+              <Image src={skill.icon} alt={skill.name} fluid />
               <p>{skill.name}</p>
             </div>
-          ))}
-        </div>
-
-        {/* Seconda metà */}
-        <div className="skills-group">
-          {bottomSkills.map((skill, index) => (
-            <div className="skill-item" key={index}>
-              <img src={skill.icon} alt={skill.name} />
-              <p>{skill.name}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 };
 

@@ -30,7 +30,7 @@ const projectsData = [
     description:
       "Un applicazione per il meteo che ti consente di rimanere aggiornato per le condizioni meteorologiche di tutto il mondo.",
     githubLink: "https://github.com/Gianlucapratico/weather-app",
-    imageSrc: process.env.PUBLIC_URL + "",
+    imageSrc: process.env.PUBLIC_URL + "./assets/weatherapp.png",
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const projectsData = [
     description:
       "Una semplice calcolatrice che permette di effettuare le 4 operazioni fondamentali",
     githubLink: "https://github.com/Gianlucapratico/Calcolatrice",
-    imageSrc: process.env.PUBLIC_URL + "",
+    imageSrc: process.env.PUBLIC_URL + "./assets/calcolatrice.png",
   },
 ];
 

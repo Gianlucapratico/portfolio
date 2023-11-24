@@ -111,15 +111,15 @@ svg.nome {
 }
 
 .dark-mode #projects {
-  background-color: #2b2b2b;
   color: white;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.548);
+  background-color: #3b3b3b;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 55%);
 }
 
-.dark-mode #contact {
-  background-color: #333;
+.dark-mode #contact.container {
+  background-color: #3b3b3b;
   color: white;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.548);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 55%);
 }
 main {
   max-width: 800px;
@@ -249,6 +249,7 @@ section {
   margin: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  background-color: #f3f2f2;
 }
 
 #projects h2 {
@@ -521,13 +522,13 @@ h2 {
 
 /* Aggiungi stili specifici per il bottone nella modalità dark */
 .dark-mode #contact Button {
-  color: #61dafb;
-  background-color: #333;
+  color: #333;
+  background-color: #61dafb;
   border: 1px solid white;
 }
 
 .dark-mode #contact Button:hover {
-  background-color: #444;
+  background-color: #61dafb;
   color: #ffcc00;
 }
 /* Contacts Styles */
@@ -555,16 +556,15 @@ h2 {
   background-color: #444;
   color: #ffcc00;
 }
-/* App.css (o il tuo file di stile) */
-/* App.css (o il tuo file di stile) */
-/* App.css */
+#contact {
+  background-color: #f3f2f2;
+}
 
-/* Aggiungi questi stili per MySkills */
 .skills-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px; /* Modifica la larghezza massima a tua scelta */
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -575,13 +575,13 @@ h2 {
 
 .skill-item {
   text-align: center;
-  margin: 10px;
+  margin: 15px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .skill-item img {
-  width: 50px; /* Imposta la larghezza delle icone a tua scelta */
-  height: 50px; /* Imposta l'altezza delle icone a tua scelta */
+  width: 65px;
+  height: 65px;
   margin-bottom: 5px;
 }
 .dark-mode.skills-container {
@@ -594,36 +594,15 @@ h2 {
 .dark-mode .Skills {
   color: white;
 }
+body.dark-mode.skill-item:hover {
+  color: red;
+  transform: translateY(10px);
+}
 .skill-item:hover {
   color: red; /* Cambia il colore a rosso al passaggio del mouse */
   transform: translateY(10px); /* Sposta leggermente l'elemento verso l'alto */
 }
 
-/* Stili generici per il pulsante */
-.MuiButton-root {
-  background-color: transparent;
-  border: none;
-  color: inherit;
-  font-size: 36px;
-  cursor: pointer;
-}
-
-/* Stili specifici per il pulsante della dark mode */
-.MuiButton-root.dark-mode-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-weight: bold;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.MuiButton-root.dark-mode-toggle:hover {
-  transform: scale(1.1); /* Effetto di scaling al passaggio del mouse */
-}
 .dark-mode h2.cv {
   color: white;
 }

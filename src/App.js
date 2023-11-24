@@ -55,7 +55,7 @@ function App() {
         <MySkills />
         <Projects />
         <CV />
-        <Contacts />
+        <Contacts isDarkMode={isDarkMode} />
       </main>
     </Container>
   );
