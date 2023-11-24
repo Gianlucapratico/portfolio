@@ -1,0 +1,629 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+body {
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #2f1c6b;
+}
+
+.dark-mode body {
+  background-color: #a71b1b;
+  color: white;
+}
+.App {
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(202, 52, 52);
+}
+
+/* Reset CSS */
+/* Reset CSS */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* styles.css */
+
+.animated-header text {
+  animation: stroke 3s infinite alternate;
+  stroke-width: 2;
+  font-size: 40px;
+}
+/* Header.css */
+.sun-moon-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.sun-moon-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Stili per la modalità dark */
+.dark-mode .animated-header text {
+  stroke: #fff;
+}
+
+/* Stili per la modalità chiara */
+.animated-header text {
+  stroke: rgba(72, 138, 204, 1);
+}
+svg.nome {
+  font-family: "Russo One", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 204, 0);
+
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 204, 0);
+  }
+  80% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(72, 138, 204, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgba(72, 138, 204, 1);
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+.dark-mode #projects {
+  background-color: #2b2b2b;
+  color: white;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.548);
+}
+
+.dark-mode #contact {
+  background-color: #333;
+  color: white;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.548);
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #2f1c6b;
+}
+
+/* Header Styles */
+header {
+  color: #2f1c6b;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  position: relative;
+  animation: fadeInUp 1.5s ease-in-out; /* Imposta la durata e la transizione */
+}
+
+/* Definisci l'animazione fadeInUp */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+.dark-mode header {
+  color: white;
+}
+.dark-mode header h1,
+.dark-mode header nav a {
+  color: inherit;
+}
+.dark-mode nav a:hover {
+  color: #ffcc00;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #2f1c6b;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Section Styles */
+section {
+  padding: 40px;
+  text-align: center;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: inherit;
+}
+
+/* About Me Styles */
+
+#about h2 {
+  color: #2f1c6b;
+}
+
+#about p {
+  color: #2f1c6b;
+  font-size: 1.2rem;
+}
+.dark-mode #about {
+  background-color: #2b2b2b;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.548); /* Cambia il colore di sfondo in modalità scura */
+}
+
+.dark-mode #about h2,
+.dark-mode #about p {
+  color: white; /* Cambia il colore del testo in modalità scura */
+}
+/* Projects Styles */
+
+#projects h2 {
+  color: #2f1c6b;
+}
+
+#projects p {
+  font-size: 1.2rem;
+  color: #2f1c6b;
+}
+.dark-mode #projects p {
+  color: #fff;
+}
+/* Contact Styles */
+
+#contact h2 {
+  color: #fff;
+}
+
+#contact p {
+  font-size: 1.2rem;
+}
+
+#projects {
+  padding: 40px;
+  text-align: center;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#projects h2 {
+  color: inherit;
+}
+
+/* ... Altri stili ... */
+
+/* Freccette del Carosello */
+/* ... Altri stili ... */
+
+.slick-arrow {
+  font-size: 32px;
+  color: #d13131b0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  padding: 20px;
+}
+
+body .slick-prev:before {
+  content: "←";
+  color: rgba(22, 14, 14, 0.911);
+  font-size: 50px;
+}
+
+body .slick-next:before {
+  content: "→";
+  color: rgba(22, 14, 14, 0.911);
+  font-size: 50px;
+}
+
+body .dark-mode .slick-prev:before,
+body .dark-mode .slick-next:before {
+  color: #fff;
+}
+
+.slick-prev .arrow-container,
+.slick-next .arrow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: rgb(231, 197, 27);
+}
+
+/* Stili specifici per la modalità dark */
+
+/* Aumenta l'area cliccabile delle frecce */
+.slick-prev .arrow-container,
+.slick-next .arrow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+}
+
+/* Cambia il colore delle frecce al passaggio del mouse */
+.slick-prev:hover,
+.slick-next:hover {
+  color: rgb(231, 197, 27);
+}
+
+/* Posizionamento delle frecce */
+body .slick-prev {
+  left: -47px;
+}
+
+body .slick-next {
+  right: -15px;
+}
+
+/* Stili specifici per la modalità light */
+.light-mode .slick-prev:before,
+.light-mode .slick-next:before {
+  color: #fffefeb0;
+}
+
+.light-mode .slick-prev:hover,
+.light-mode .slick-next:hover {
+  color: rgb(231, 197, 27);
+}
+
+/* Cambia il colore delle frecce nella modalità dark */
+.dark-mode .slick-prev:before,
+.dark-mode .slick-next:before {
+  color: #b4acac;
+  font-size: 50px;
+}
+
+/* Regola la posizione delle frecce */
+.slick-prev {
+  left: -67px;
+}
+
+.slick-next {
+  right: -28px;
+}
+
+/* Effetto al passaggio del mouse */
+.slick-prev:hover,
+.slick-next:hover {
+  color: rgb(231, 197, 27);
+}
+
+/* ... Altri stili ... */
+
+button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+/* Aggiungi stili al bottone della dark mode */
+button.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  color: #8f2020;
+
+  border: 1px solid #fff;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project-item h3 {
+  color: #2f1c6b;
+  font-size: 1.2rem; /* Colore del titolo del progetto */
+}
+.dark-mode .project-item h3 {
+  color: #fff; /* Cambia il colore del titolo del progetto in modalità scura */
+}
+.project-item p {
+  color: #ccc; /* Colore della descrizione del progetto */
+}
+
+.project-item img {
+  max-width: 100%; /* Imposta la larghezza massima dell'immagine al 100% del contenitore */
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.project-item a {
+  color: #61dafb; /* Colore del link al progetto su GitHub */
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.project-item a:hover {
+  color: #ffcc00; /* Cambia colore al passaggio del mouse */
+}
+/* App.css */
+
+/* Stili per il titolo "CONTATTI" */
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Stili per il container del form */
+.container {
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Stili per le etichette del form */
+.formLabel {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+/* Stili per gli input del form */
+.form-control {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  margin-left: 15px;
+}
+
+/* Stili per il textarea del form */
+.form-control textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Stili per il pulsante "Invia" */
+.btn-primary {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffcc00;
+}
+
+/* Stili per posizionare al centro i campi del form */
+/* Aggiorna il CSS per la form-group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+/* Aggiungi stili per allineare i campi "Nome" ed "Email" orizzontalmente */
+.form-group label,
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  margin-bottom: 8px; /* Aggiungi un po' di spazio tra i campi */
+}
+
+/* Aggiorna il CSS per il textarea del form */
+.form-control textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.d-flex.flex-column.justify-content-center {
+  display: flex;
+  flex-direction: column;
+}
+/* Aggiungi questa regola per la modalità dark nella sezione Contacts */
+.dark-mode #contact {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+/* Aggiungi stili specifici per la modalità dark all'interno del form */
+.dark-mode #contact .formLabel {
+  color: white;
+}
+
+.dark-mode #contact .form {
+  color: white;
+}
+
+/* Aggiungi stili specifici per il bottone nella modalità dark */
+.dark-mode #contact Button {
+  color: #61dafb;
+  background-color: #333;
+  border: 1px solid white;
+}
+
+.dark-mode #contact Button:hover {
+  background-color: #444;
+  color: #ffcc00;
+}
+/* Contacts Styles */
+
+#contact h2 {
+  color: inherit;
+}
+
+#contact .formLabel {
+  color: #2f1c6b;
+}
+
+#contact .form {
+  color: #fff;
+  border: solid 1px #2f1c6b;
+}
+
+#contact Button {
+  background-color: #61dafb;
+  color: #333;
+  border: 1px solid #fff;
+}
+
+#contact Button:hover {
+  background-color: #444;
+  color: #ffcc00;
+}
+/* App.css (o il tuo file di stile) */
+/* App.css (o il tuo file di stile) */
+/* App.css */
+
+/* Aggiungi questi stili per MySkills */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px; /* Modifica la larghezza massima a tua scelta */
+  margin: 0 auto;
+}
+
+.skills-group {
+  display: flex;
+  align-items: center;
+}
+
+.skill-item {
+  text-align: center;
+  margin: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item img {
+  width: 50px; /* Imposta la larghezza delle icone a tua scelta */
+  height: 50px; /* Imposta l'altezza delle icone a tua scelta */
+  margin-bottom: 5px;
+}
+.dark-mode.skills-container {
+  color: white;
+}
+.dark-mode .skills-container,
+.dark-mode .skills-container p {
+  color: white;
+}
+.dark-mode .Skills {
+  color: white;
+}
+.skill-item:hover {
+  color: red; /* Cambia il colore a rosso al passaggio del mouse */
+  transform: translateY(10px); /* Sposta leggermente l'elemento verso l'alto */
+}
+
+/* Stili generici per il pulsante */
+.MuiButton-root {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+/* Stili specifici per il pulsante della dark mode */
+.MuiButton-root.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.MuiButton-root.dark-mode-toggle:hover {
+  transform: scale(1.1); /* Effetto di scaling al passaggio del mouse */
+}
+.dark-mode h2.cv {
+  color: white;
+}
