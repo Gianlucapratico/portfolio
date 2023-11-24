@@ -437,6 +437,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  padding-bottom: 0;
 }
 
 /* Stili per le etichette del form */
@@ -525,6 +526,7 @@ h2 {
   color: #333;
   background-color: #61dafb;
   border: 1px solid white;
+  margin-bottom: 42px;
 }
 
 .dark-mode #contact Button:hover {
@@ -550,6 +552,7 @@ h2 {
   background-color: #61dafb;
   color: #333;
   border: 1px solid #fff;
+  margin-bottom: 42px;
 }
 
 #contact Button:hover {
@@ -605,4 +608,19 @@ body.dark-mode.skill-item:hover {
 
 .dark-mode h2.cv {
   color: white;
+}
+.my-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin-top: 5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f3f2f2;
+}
+
+.my-footer.dark-mode {
+  background-color: #3b3b3b;
+  color: #fff;
 }

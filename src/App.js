@@ -13,6 +13,7 @@ import Col from "react-bootstrap/Col";
 
 import CV from "./components/Cv";
 import { Container } from "react-bootstrap";
+import MyFooter from "./components/MyFooter";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -56,6 +57,7 @@ function App() {
         <Projects />
         <CV />
         <Contacts isDarkMode={isDarkMode} />
+        <MyFooter isDarkMode={isDarkMode} />
       </main>
     </Container>
   );
