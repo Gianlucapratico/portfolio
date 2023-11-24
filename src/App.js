@@ -36,8 +36,6 @@ const useStyles = makeStyles({
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const classes = useStyles();
-
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
