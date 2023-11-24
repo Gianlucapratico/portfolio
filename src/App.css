@@ -517,7 +517,7 @@ h2 {
 }
 
 .dark-mode #contact .form {
-  color: white;
+  color: #232020;
 }
 
 /* Aggiungi stili specifici per il bottone nella modalità dark */
@@ -542,7 +542,7 @@ h2 {
 }
 
 #contact .form {
-  color: #fff;
+  color: #232020;
   border: solid 1px #2f1c6b;
 }
 
