@@ -7,12 +7,7 @@ const MyFooter = ({ isDarkMode }) => {
   const iconStyle = {
     marginRight: isDarkMode ? "1rem" : "0.5rem",
     color: isDarkMode ? "#fff" : "#2f1c6b",
-    fontSize: "3rem", // Imposta la dimensione desiderata
-  };
-
-  const linkStyle = {
-    textDecoration: "none",
-    color: isDarkMode ? "#fff" : "#000",
+    fontSize: "54px", // Imposta la dimensione desiderata
   };
 
   useEffect(() => {
@@ -23,28 +18,25 @@ const MyFooter = ({ isDarkMode }) => {
   return (
     <div className={`my-footer ${isDarkMode ? "dark-mode" : ""}`}>
       <a
-        href="https://github.com/Vallerga"
+        href="https://github.com/Gianlucapratico"
         target="_blank"
         rel="noreferrer"
-        style={linkStyle}
       >
-        <AiFillGithub style={iconStyle} />
+        <AiFillGithub className="github" />
       </a>
       <a
-        href="https://www.facebook.com/profile.php?id=100004782134748"
+        href="https://www.facebook.com/luca.pratico1/"
         target="_blank"
         rel="noreferrer"
-        style={linkStyle}
       >
-        <BsFacebook style={iconStyle} />
+        <BsFacebook width={"54px"} height={"54px"} />
       </a>
       <a
-        href="https://www.linkedin.com/in/antonio-vallerga-2612a468/"
+        href="https://www.linkedin.com/in/gianluca-pratic%C3%B2/"
         target="_blank"
         rel="noreferrer"
-        style={linkStyle}
       >
-        <BsLinkedin style={iconStyle} />
+        <BsLinkedin />
       </a>
     </div>
   );

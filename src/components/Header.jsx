@@ -19,7 +19,7 @@ const Header = ({ isDarkMode }) => {
       <img
         src={`${process.env.PUBLIC_URL}./assets/GianlucaPraticò.jpg`}
         alt="Pic"
-        style={{ width: "200px", height: "200px", borderRadius: "50%" }}
+        style={{ width: "240px", height: "200px", borderRadius: "50%" }}
       />
 
       <h2>Junior Full Stack Developer</h2>

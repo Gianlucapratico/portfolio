@@ -624,3 +624,29 @@ body.dark-mode.skill-item:hover {
   background-color: #3b3b3b;
   color: #fff;
 }
+.my-footer a svg.github {
+  color: rgb(47, 28, 107);
+  margin-right: 0.5rem;
+  font-size: 64px;
+}
+.dark-mode svg.github {
+  color: rgb(255, 255, 255);
+}
+.my-footer a svg {
+  color: rgb(47, 28, 107);
+  margin-right: 0.5rem;
+  font-size: 54px;
+  transition: color 0.6s;
+}
+
+.my-footer.dark-mode a svg {
+  color: #61dafb;
+}
+
+.my-footer a:hover svg {
+  color: #61dafb;
+}
+
+.my-footer.dark-mode a:hover svg {
+  color: #bbb;
+}

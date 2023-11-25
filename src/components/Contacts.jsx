@@ -35,7 +35,7 @@ function Contacts({ isDarkMode }) {
           controlId="formName"
           className="d-flex flex-column align-items-start"
         >
-          <Form.Label className="formLabel mb-2">Nome</Form.Label>
+          <Form.Label className="formLabel mb-2">Nome:</Form.Label>
           <Form.Control
             type="text"
             placeholder="Inserisci il tuo nome"
@@ -49,7 +49,7 @@ function Contacts({ isDarkMode }) {
           controlId="formEmail"
           className="d-flex flex-column align-items-start"
         >
-          <Form.Label className="formLabel mb-2 mt-1">Email</Form.Label>
+          <Form.Label className="formLabel mb-2 mt-1">Email:</Form.Label>
           <Form.Control
             type="email"
             placeholder="Inserisci la tua email"
@@ -63,7 +63,7 @@ function Contacts({ isDarkMode }) {
           controlId="formMessage"
           className="d-flex flex-column justify-content-center"
         >
-          <Form.Label className="formLabel mb-2 mt-1">Messaggio</Form.Label>
+          <Form.Label className="formLabel mb-2 mt-1">Messaggio:</Form.Label>
           <Form.Control
             as="textarea"
             rows={6}
