@@ -277,7 +277,7 @@ body .slick-prev:before {
   content: "←";
   color: rgba(22, 14, 14, 0.911);
   font-size: 40px;
-  margin: 4px;
+  margin: 8px;
 }
 
 body .slick-next:before {
@@ -677,7 +677,7 @@ body.dark-mode.skill-item:hover {
 .scroll-to-top {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 0px;
   color: rgb(47, 28, 107);
   padding: 10px;
   border-radius: 50%;
