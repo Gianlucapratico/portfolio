@@ -56,7 +56,7 @@ function App() {
         <Header isDarkMode={isDarkMode} />
         <AboutMe />
         <MySkills />
-        <Projects />
+        <Projects isDarkMode={isDarkMode} />
         <MyCertificates />
         <CV />
         <Contacts isDarkMode={isDarkMode} />

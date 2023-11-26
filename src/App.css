@@ -421,9 +421,12 @@ button.dark-mode-toggle {
   margin-top: 10px;
   transition: color 0.3s ease;
 }
+.dark-mode .project-item a {
+  color: #61dafb;
+}
 
 .project-item a:hover {
-  color: #2f1c6b; /* Cambia colore al passaggio del mouse */
+  color: rgb(231, 197, 27); /* Cambia colore al passaggio del mouse */
 }
 /* App.css */
 
