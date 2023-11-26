@@ -6,6 +6,7 @@ body {
   font-family: "Roboto", sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
   background-color: #c1b3ee46;
+  overflow-x: hidden;
 }
 
 body.dark-mode {
