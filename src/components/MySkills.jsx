@@ -20,7 +20,7 @@ const MySkills = () => {
   ];
 
   return (
-    <Container fluid>
+    <Container id="myskills" fluid>
       <h2 className="Skills">My Skills</h2>
       <Row
         xs={1}

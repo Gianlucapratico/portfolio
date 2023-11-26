@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Goblin+One&family=Playfair+Display&family=Roboto:ital,wght@1,700&display=swap");
 
 body {
   font-family: "Roboto", sans-serif;
@@ -150,8 +151,10 @@ h1 {
   }
 }
 header h1 {
-  margin: 0;
-  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  margin: 5px;
+  font-size: 80px;
+  margin-bottom: 20px;
 }
 .dark-mode header {
   color: white;
@@ -162,10 +165,6 @@ header h1 {
 }
 .dark-mode nav a:hover {
   color: #ffcc00;
-}
-
-nav {
-  margin-top: 10px;
 }
 
 nav ul {
@@ -185,6 +184,7 @@ nav a {
   font-weight: bold;
   font-size: 1.2rem;
   transition: color 0.3s ease;
+  margin: 5px;
 }
 
 nav a:hover {
