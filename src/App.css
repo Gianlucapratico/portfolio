@@ -152,7 +152,6 @@ h1 {
   }
 }
 header h1 {
-  font-family: "roboto", serif;
   margin: 5px;
   font-size: 80px;
   margin-bottom: 20px;
@@ -189,7 +188,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: #bb39c9;
 }
 
 /* Section Styles */
@@ -397,11 +396,11 @@ button.dark-mode-toggle {
 }
 
 .project-item h3 {
-  color: #2f1c6b;
+  color: #bb39c9;
   font-size: 1.2rem; /* Colore del titolo del progetto */
 }
 .dark-mode .project-item h3 {
-  color: #fff; /* Cambia il colore del titolo del progetto in modalità scura */
+  color: #61dafb; /* Cambia il colore del titolo del progetto in modalità scura */
 }
 .project-item p {
   color: #ccc; /* Colore della descrizione del progetto */
@@ -415,7 +414,7 @@ button.dark-mode-toggle {
 }
 
 .project-item a {
-  color: #61dafb; /* Colore del link al progetto su GitHub */
+  color: #bb39c9; /* Colore del link al progetto su GitHub */
   text-decoration: none;
   font-weight: bold;
   display: block;
@@ -424,7 +423,7 @@ button.dark-mode-toggle {
 }
 
 .project-item a:hover {
-  color: #ffcc00; /* Cambia colore al passaggio del mouse */
+  color: #2f1c6b; /* Cambia colore al passaggio del mouse */
 }
 /* App.css */
 
@@ -690,8 +689,8 @@ body.dark-mode.skill-item:hover {
   opacity: 1;
 }
 .arrow-icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .dark-mode .scroll-to-top {
   color: #61dafb;

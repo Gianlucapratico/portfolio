@@ -5,15 +5,16 @@ const AboutMe = () => {
     <section id="about">
       <h2>About me</h2>
       <p>
-        Mi chiamo Gianluca Praticò, ho 29 anni e vivo a Reggio Calabria dopo
-        aver lavorato diversi anni come Barman, per vari motivi, ho deciso di
-        dare una svolta alla mia carriera professionale e quindi sono giunto
-        alla conclusione di intraprendere un corso intensivo come Full Stack
-        Developer presso EPICODE della durata di 6 mesi, in cui ho svolto
-        progetti concreti e tanti lavori di gruppo. Mi considero una persona
-        responsabile e precisa, con buone doti comunicative e capacità di
-        lavorare in team. Sono alla ricerca della mia prima esperienza
-        lavorativa come Full Stack Developer.
+        Mi chiamo Gianluca Praticò, ho 29 anni e vivo a Reggio Calabria;{" "}
+        <br></br>mi considero una persona responsabile e precisa, <br></br>con
+        buone doti comunicative e capacità di lavorare in team. <br></br>Da
+        qualche tempo ho deciso di dedicarmi al mondo della programmazione{" "}
+        <br></br>e mi sono subito lanciato in un corso intensivo come Full Stack
+        Developer <br></br>della durata di 6 mesi organizzato da EPICODE, grazie
+        al quale ho svolto <br></br>progetti concreti e tanti lavori individuali
+        e di gruppo. <br></br>Sono dunque alla ricerca della mia prima
+        esperienza lavorativa <br></br>come Full Stack Developer: non vedo l'ora
+        di iniziare!
       </p>
     </section>
   );
