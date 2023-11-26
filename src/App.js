@@ -14,6 +14,8 @@ import Col from "react-bootstrap/Col";
 import CV from "./components/Cv";
 import { Container } from "react-bootstrap";
 import MyFooter from "./components/MyFooter";
+import MyCertificates from "./components/MyCertificates";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -55,9 +57,11 @@ function App() {
         <AboutMe />
         <MySkills />
         <Projects />
+        <MyCertificates />
         <CV />
         <Contacts isDarkMode={isDarkMode} />
         <MyFooter isDarkMode={isDarkMode} />
+        <ScrollToTop />
       </main>
     </Container>
   );

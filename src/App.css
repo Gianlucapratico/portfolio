@@ -195,7 +195,7 @@ nav a:hover {
 section {
   padding: 40px;
   text-align: center;
-  margin: 20px 0;
+  margin: 40px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: #f3f2f2;
@@ -246,7 +246,7 @@ section {
 #projects {
   padding: 40px;
   text-align: center;
-  margin: 20px 0;
+  margin: 40px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: #f3f2f2;
@@ -276,13 +276,15 @@ section {
 body .slick-prev:before {
   content: "←";
   color: rgba(22, 14, 14, 0.911);
-  font-size: 50px;
+  font-size: 40px;
+  margin: 4px;
 }
 
 body .slick-next:before {
   content: "→";
   color: rgba(22, 14, 14, 0.911);
-  font-size: 50px;
+  font-size: 40px;
+  margin: 4px;
 }
 
 body .dark-mode .slick-prev:before,
@@ -346,7 +348,8 @@ body .slick-next {
 .dark-mode .slick-prev:before,
 .dark-mode .slick-next:before {
   color: #b4acac;
-  font-size: 50px;
+  font-size: 40px;
+  margin: 4px;
 }
 
 /* Regola la posizione delle frecce */
@@ -650,4 +653,46 @@ body.dark-mode.skill-item:hover {
 
 .my-footer.dark-mode a:hover svg {
   color: #bbb;
+}
+.dark-mode #certificates {
+  color: white;
+  background-color: #3b3b3b;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 55%);
+}
+#certificates {
+  padding: 40px;
+  text-align: center;
+  margin: 40px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f3f2f2;
+}
+.certificate-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: rgb(47, 28, 107);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+}
+.arrow-icon {
+  width: 40px;
+  height: 40px;
+}
+.dark-mode .scroll-to-top {
+  color: #61dafb;
 }

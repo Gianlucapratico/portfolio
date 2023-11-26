@@ -12,7 +12,7 @@ const CV = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", marginBottom: "25px" }}>
+    <div style={{ textAlign: "center", marginBottom: "40px" }}>
       <h2 className="cv">Download my CV:</h2>
 
       <button onClick={downloadCV}>

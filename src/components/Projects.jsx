@@ -40,6 +40,14 @@ const projectsData = [
     githubLink: "https://github.com/Gianlucapratico/Calcolatrice",
     imageSrc: process.env.PUBLIC_URL + "./assets/calcolatrice.png",
   },
+  {
+    id: 5,
+    title: "Reactflix",
+    description:
+      "Reactflix è il clone della nota piattaforma Netflix. Realizzato appunto con react e bootstrap.",
+    githubLink: "https://github.com/Gianlucapratico/reactflixpt2",
+    imageSrc: process.env.PUBLIC_URL + "./assets/reactflix.png",
+  },
 ];
 
 const NextArrow = ({ onClick }) => (

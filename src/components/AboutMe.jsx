@@ -3,7 +3,7 @@ import React from "react";
 const AboutMe = () => {
   return (
     <section id="about">
-      <h2>About me:</h2>
+      <h2>About me</h2>
       <p>
         Mi chiamo Gianluca Praticò, ho 29 anni e vivo a Reggio Calabria dopo
         aver lavorato diversi anni come Barman, per vari motivi, ho deciso di
