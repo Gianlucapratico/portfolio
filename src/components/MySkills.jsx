@@ -17,6 +17,7 @@ const MySkills = () => {
     { name: "MySQL", icon: "./assets/mysql.png" },
     { name: "CSS3", icon: "./assets/CSS3.png" },
     { name: "HTML5", icon: "./assets/HTML5.png" },
+    { name: "Wordpress", icon: "./assets/wordpress.png" },
   ];
 
   return (

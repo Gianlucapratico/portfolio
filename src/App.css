@@ -81,6 +81,7 @@ ul {
 .animated-header text {
   stroke: rgba(72, 138, 204, 1);
 }
+
 svg.nome {
   font-family: "Russo One", sans-serif;
   width: 100%;
@@ -90,7 +91,6 @@ svg.nome {
 @keyframes stroke {
   0% {
     fill: rgba(72, 138, 204, 0);
-
     stroke-dashoffset: 25%;
     stroke-dasharray: 0 50%;
     stroke-width: 2;
@@ -137,10 +137,9 @@ header {
 }
 h1 {
   position: relative;
-  animation: fadeInUp 1.5s ease-in-out; /* Imposta la durata e la transizione */
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
-/* Definisci l'animazione fadeInUp */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -218,7 +217,7 @@ section {
 
 .dark-mode #about h2,
 .dark-mode #about p {
-  color: white; /* Cambia il colore del testo in modalità scura */
+  color: white;
 }
 /* Projects Styles */
 
@@ -256,10 +255,7 @@ section {
   color: inherit;
 }
 
-/* ... Altri stili ... */
-
 /* Freccette del Carosello */
-/* ... Altri stili ... */
 
 .slick-arrow {
   font-size: 32px;
@@ -308,7 +304,6 @@ body .dark-mode .slick-next:before {
 
 /* Stili specifici per la modalità dark */
 
-/* Aumenta l'area cliccabile delle frecce */
 .slick-prev .arrow-container,
 .slick-next .arrow-container {
   position: absolute;
@@ -318,7 +313,6 @@ body .dark-mode .slick-next:before {
   height: 100%;
 }
 
-/* Cambia il colore delle frecce al passaggio del mouse */
 .slick-prev:hover,
 .slick-next:hover {
   color: rgb(231, 197, 27);
@@ -361,13 +355,10 @@ body .slick-next {
   right: -28px;
 }
 
-/* Effetto al passaggio del mouse */
 .slick-prev:hover,
 .slick-next:hover {
   color: rgb(231, 197, 27);
 }
-
-/* ... Altri stili ... */
 
 button {
   background-color: transparent;
@@ -377,7 +368,6 @@ button {
   cursor: pointer;
 }
 
-/* Aggiungi stili al bottone della dark mode */
 button.dark-mode-toggle {
   position: absolute;
   top: 20px;
@@ -397,24 +387,24 @@ button.dark-mode-toggle {
 
 .project-item h3 {
   color: #bb39c9;
-  font-size: 1.2rem; /* Colore del titolo del progetto */
+  font-size: 1.2rem;
 }
 .dark-mode .project-item h3 {
-  color: #61dafb; /* Cambia il colore del titolo del progetto in modalità scura */
+  color: #61dafb;
 }
 .project-item p {
-  color: #ccc; /* Colore della descrizione del progetto */
+  color: #ccc;
 }
 
 .project-item img {
-  max-width: 100%; /* Imposta la larghezza massima dell'immagine al 100% del contenitore */
+  max-width: 100%;
   height: auto;
   margin-top: 20px;
   border-radius: 8px;
 }
 
 .project-item a {
-  color: #bb39c9; /* Colore del link al progetto su GitHub */
+  color: #bb39c9;
   text-decoration: none;
   font-weight: bold;
   display: block;
@@ -426,7 +416,7 @@ button.dark-mode-toggle {
 }
 
 .project-item a:hover {
-  color: rgb(231, 197, 27); /* Cambia colore al passaggio del mouse */
+  color: rgb(231, 197, 27);
 }
 /* App.css */
 
